@@ -8,11 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./style.css">
     <title>figma-creator</title>
 </head>
 
 <body>
+
+    <div id="overlay">
+        <a href="javascript:void(0)"><i class="fa-solid fa-xmark" id="closebtn"></i></a>
+        <div id="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">Blog</a>
+            <a href="#">Book a call</a>
+        </div>
+    </div>
     <div class="container">
         <div class="header">
             <div class="l-header">
@@ -26,456 +39,466 @@
                 <a href="#">Book a call</a>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
-        </div>
-        <div class="content">
-            <div class="left-side">
-                <h1>I design products</h1>
-                <h2>that delight and inspire people.</h2>
-                <span>Hi! I’m Jake, a product designer based in Berlin. I create user-friendly interfaces for
-                    fast-growing
-                    startups.</span>
-                <div class="buttons">
-                    <div class="black">
-                        <button>Book a call</button>
-                    </div>
-                    <div class="white">
-                        <button>Download CV</button>
-                    </div>
-                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="img">
-                <img src="./svgs/img.svg" alt="" class="author">
+            <div id="navbar">
+                <i class="fa-solid fa-bars" id="bar"></i>
             </div>
         </div>
-        <div class="logos">
-            <h5>Trusted by</h5>
-            <div class="logo-name">
-                <div class="log">
-                    <img src="./svgs/log1.svg" alt="">
+    </div>
+    <div class="content">
+        <div class="left-side" data-aos="fade-right">
+            <h1><span>I design products</span><br>
+            that delight and <br />
+            inspire people.</h1>
+            <span>Hi! I’m Jake, a product designer based in Berlin. I create<br/> user-friendly interfaces for
+                fast-growing
+                startups.</span>
+            <div class="buttons">
+                <div class="black">
+                    <button>Book a call</button>
                 </div>
-                <div class="log">
-                    <img src="./svgs/log2.svg" alt="">
+                <div class="white">
+                    <button>Download CV</button>
                 </div>
-                <div class="log">
-                    <img src="./svgs/log3.svg" alt="">
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="img">
+            <img src="./svgs/img.svg" alt="" class="author">
+        </div>
+    </div>
+    <div class="logos">
+        <h5>Trusted by</h5>
+        <div class="logo-name">
+            <div class="log">
+                <img src="./svgs/log1.svg" alt="">
+            </div>
+            <div class="log">
+                <img src="./svgs/log2.svg" alt="">
+            </div>
+            <div class="log">
+                <img src="./svgs/log3.svg" alt="">
+            </div>
+            <div class="log">
+                <img src="./svgs/log4.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+    <div class="services">
+        <h1>SEVICES</h1>
+        <h2>Design that solves problems,<br/> one product at a time.</h2>
+    </div>
+    <div class="services-offer">
+        <div class="paragraph">
+            <div class="vector" data-aos="flip-up">
+                <img src="./svgs/vector-left.svg" alt="">
+            </div>
+            <h2>What I can do for you</h2>
+            <p>Faster, better products that your users love. Here's all the services I provide:</p>
+            <ul>
+                <li>Design Strategy</li>
+                <li>Web and Mobile App Design</li>
+                <li>Front-end Development</li>
+            </ul>
+        </div>
+        <div class="paragraph">
+            <div class="vector" data-aos="flip-up">
+                <img src="./svgs/vector-c.svg" alt="">
+            </div>
+            <h2>Applications I'm fluent in</h2>
+            <p>Every designer needs the right tools to do the perfect job. Thankfully, I'm multilingual.</p>
+            <ul>
+                <li>Sketch</li>
+                <li>Webflow</li>
+                <li>Figma</li>
+            </ul>
+        </div>
+        <div class="paragraph">
+            <div class="vector" data-aos="flip-up">
+                <img src="./svgs/vector-right.svg" alt="">
+            </div>
+            <h2>What you can expect</h2>
+            <p>I design products that are more than pretty. I make them shippable and usable.</p>
+            <ul>
+                <li>Clean and functional</li>
+                <li>Device and user friendly</li>
+                <li>Efficient and maintainable</li>
+            </ul>
+        </div>
+    </div>
+    <div class="project">
+        <div class="top">
+            <div class="left">
+                <h4>Projects</h4>
+                <h2>I bring results.<br>My clients are proof.</h2>
+            </div>
+            <div class="right">
+                <button>View all projects</button>
+            </div>
+        </div>
+
+        <div class="product-cards">
+            <div class="product-card">
+                <div class="foto">
+                    <img src="./images/IMAGE.svg " alt="">
                 </div>
-                <div class="log">
-                    <img src="./svgs/log4.svg" alt="">
+                <div class="foto-name">
+                    <h3>Branding</h3>
+                    <h2>Soulful Rebrand</h2>
+                    <p>View Project <i class="fa-solid fa-arrow-right"></i> </p>
+
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="foto">
+                    <img src="https://source.unsplash.com/random" alt="">
+                </div>
+                <div class="foto-name">
+                    <h3>Product Design</h3>
+                    <h2>Datadash Product design</h2>
+                    <p>View Project <i class="fa-solid fa-arrow-right"></i> </p>
+
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="foto">
+                    <img src="./images/IMAGE.svg" alt="">
+                </div>
+                <div class="foto-name">
+                    <h3>Web Design</h3>
+                    <h2>Maize Website Design</h2>
+                    <p>View Project <i class="fa-solid fa-arrow-right"></i> </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="blog">
+        <div class="blog-header">
+            <div class="vector-right">
+                <div class="top">
+                    <img src="./svgs/IMAGE (3).svg" alt="">
+                </div>
+                <div class="top">
+                    <img src="./svgs/Vector.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="black-page">
+            <div class="left-blog">
+                <h3>Blogs</h3>
+                <h1>Latest Blogs</h1>
+                <span>View all <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+            <div class="article">
+                <div class="read">
+                    <small>April 16, 2021, 6 mins</small>
+                    <p>Design tips for designers, that cover everything you need</p>
+                    <span>Read the article <i class="fa-solid fa-arrow-right"></i></span>
+                    <h5></h5>
+                </div>
+                <div class="read">
+                    <small>April 16, 2021, 5 mins</small>
+                    <p>How to build rapport with your web design clients</p>
+                    <span>Read the article <i class="fa-solid fa-arrow-right"></i></span>
+                    <h5></h5>
+                </div>
+                <div class="read">
+                    <small>April 16, 2021, 6 mins</small>
+                    <p>Top 6 free website mockup tools 2021</p>
+                    <span>Read the article <i class="fa-solid fa-arrow-right"></i></span>
+                    <h5></h5>
+                </div>
+                <div class="read">
+                    <small>April 16, 2021, 7 mins</small>
+                    <p>Logo design trends to avoid in 2021</p>
+                    <span>Read the article <i class="fa-solid fa-arrow-right"></i></span>
+                    <h5></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="information">
+        <div class="i-header">
+            <div class="i-header-left">
+                <h6>Product Designer</h6>
+                <h2>That's me!</h2>
+            </div>
+            <div class="i-header-right">
+                <p>Over the past 12 years, I've worked with a diverse range of clients, from startups to Fortune 500
+                    companies. I love crafting interfaces that delight users and help businesses grow.</p>
+            </div>
+        </div>
+        <div class="i-center">
+            <div class="i-left-side">
+                <img src="./images/IMAGE-phone.svg" alt="">
+            </div>
+            <div class="img-center">
+                <img src="./images/IMAGE -man.svg" alt="">
+            </div>
+
+            <div class="i-right-side">
+                <div class="right-side-top">
+                    <img src="./images/IMAGE pc.svg" alt="">
+                </div>
+                <div class="right-side-bottom">
+                    <img src="./images/IMAGE down.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- education/work -->
+
+    <div class="experience">
+        <div class="education">
+            <div class="edupic">
+                <img src="./images/📚 Education.svg" alt="">
+            </div>
+            <div class="info">
+                <div class="universty">
+                    <h2>Stanford University</h2>
+                    <img src="./svgs/Vector-study.svg" alt="">
+                </div>
+                <div class="date">
+                    <p>MSc (Human Computer Interaction)</p>
+                    <small>• 2013-2015</small>
+                </div>
+            </div>
+            <div class="info">
+                <div class="universty">
+                    <h2>MIT Summer School</h2>
+                    <img src="./svgs/Vector-study.svg" alt="">
+                </div>
+                <div class="date">
+                    <p>California State University</p>
+                    <small>• 2009-2012</small>
+                </div>
+            </div>
+            <div class="info">
+                <div class="universty">
+                    <h2>California State University</h2>
+                    <img src="./svgs/Vector-study.svg" alt="">
+                </div>
+                <div class="date">
+                    <p>BSc in Software Engineering</p>
+                    <small>• 2009-2012</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="work">
+            <div class="workpic">
+                <img src="./images/💼 Work Experience.svg" alt="">
+            </div>
+            <div class="infor">
+                <div class="left-s">
+                    <div class="left-pic">
+                        <div class="space">
+                            <img src="./svgs/space1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <h2>SpaceFleet</h2>
+                        <p>Senior Product Designer</p>
+                    </div>
+                </div>
+                <div class="right-s">
+                    <div class="top-s">
+                        <img src="./images/Vectorwork.svg" alt="">
+                    </div>
+                    <small>• April 2019 - Current</small>
+                </div>
+            </div>
+
+            <div class="infor">
+                <div class="left-s">
+                    <div class="left-pic">
+                        <div class="music">
+                            <img src="./svgs/music 1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <h2>MusicMash</h2>
+                        <p>Information Architect</p>
+                    </div>
+                </div>
+                <div class="right-s">
+                    <div class="top-s">
+                        <img src="./images/Vectorwork.svg" alt="">
+                    </div>
+                    <small>• April 2016 - May 2017</small>
+                </div>
+            </div>
+
+            <div class="infor">
+                <div class="left-s">
+                    <div class="left-pic">
+                        <div class="king">
+                            <img src="./svgs/king1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <h2>Kingdom</h2>
+                        <p>UI Designer</p>
+                    </div>
+                </div>
+                <div class="right-s">
+                    <div class="top-s">
+                        <img src="./images/Vectorwork.svg" alt="">
+                    </div>
+                    <small>• April 2016 - May 2017</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="test">
+        <div class="test-header">
+            <div class="side">
+                <h6>Testimonials</h6>
+                <h1>Word on the street</h1>
+            </div>
+        </div>
+        <div class="center">
+            <div class="man" data-aos="zoom-in">
+                <img src="./images/redman.svg" alt="">
+            </div>
+            <div class="speech">
+                <div class="vector-c">
+                    <img src="./images/dirnaq.svg" alt="">
+                </div>
+                <h2>Jade helped us build a software so intuitive that it didn't need a walkthrough.He solved complex
+                    problems with brilliant design.</h2>
+                <div class="bottom">
+                    <div class="name">
+                        <h4>John Frankin</h4>
+                        <p>Founder, Double Bunch</p>
+                    </div>
+                    <div class="bottom-figure">
+                        <div class="bottom-f">
+                            <img src="./images/whitevec.svg" alt="">
+                        </div>
+                        <div class="bottom-f">
+                            <img src="./images/wgitev.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="faq-header">
+            <h5>FAQ</h5>
+            <h1>Frequently asked questions</h1>
+        </div>
+        <div class="section">
+            <div class="section-left">
+                <div class="question">
+                    <p>What type of projects do you take on?</p>
+                    <div class="faq-vector">
+                        <img src="./images/Vectorfaq.svg" alt="">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>What is your hourly rate?</p>
+                    <div class="faq-vector">
+                        <img src="./images/Vectorfaq.svg" alt="">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>What time-zone do you work in?</p>
+                    <div class="faq-vector">
+                        <img src="./images/Vectorfaq.svg" alt="">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>What is the typical timeline for a project?</p>
+                    <div class="faq-vector">
+                        <img src="./images/Vectorfaq.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section-right">
+                <div class="question">
+                    <p>How do you charge for projects ?</p>
+                    <div class="faq-vector">
+                        <img src="./images/Vectorfaq.svg" alt="">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>What does your design process look like?</p>
+                    <div class="faq-vector">
+                        <img src="./images/Vectorfaq.svg" alt="">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>What metrics do you use to measure success?</p>
+                    <div class="faq-vector">
+                        <img src="./images/Vectorfaq.svg" alt="">
+                    </div>
+                </div>
+                <div class="question">
+                    <p>What if I need help after the project is complete?</p>
+                    <div class="faq-vector">
+                        <img src="./images/Vectorfaq.svg" alt="">
+                    </div>
                 </div>
 
             </div>
         </div>
-        <div class="services">
-            <h1>SEVICES</h1>
-            <h2>Design that solves problems, one product at a time.</h2>
-        </div>
-        <div class="services-offer">
-            <div class="paragraph">
-                <div class="vector">
-                    <img src="./svgs/vector-left.svg" alt="">
-                </div>
-                <h2>What I can do for you</h2>
-                <p>Faster, better products that your users love. Here's all the services I provide:</p>
-                <ul>
-                    <li>Design Strategy</li>
-                    <li>Web and Mobile App Design</li>
-                    <li>Front-end Development</li>
-                </ul>
+        <div class="footer">
+            <div class="footer-top">
+                <h1>Ready to make something kickass?</h1>
+                <h2>Let's get on a call.</h2>
             </div>
-            <div class="paragraph">
-                <div class="vector">
-                    <img src="./svgs/vector-c.svg" alt="">
-                </div>
-                <h2>Applications I'm fluent in</h2>
-                <p>Every designer needs the right tools to do the perfect job. Thankfully, I'm multilingual.</p>
-                <ul>
-                    <li>Sketch</li>
-                    <li>Webflow</li>
-                    <li>Figma</li>
-                </ul>
-            </div>
-            <div class="paragraph">
-                <div class="vector">
-                    <img src="./svgs/vector-right.svg" alt="">
-                </div>
-                <h2>What you can expect</h2>
-                <p>I design products that are more than pretty. I make them shippable and usable.</p>
-                <ul>
-                    <li>Clean and functional</li>
-                    <li>Device and user friendly</li>
-                    <li>Efficient and maintainable</li>
-                </ul>
-            </div>
-        </div>
-        <div class="project">
-            <div class="top">
+            <div class="footer-bottom">
                 <div class="left">
-                    <h4>Projects</h4>
-                    <h2>I bring results.My clients are proof.</h2>
+                    <p>Portfolio Creator.</p>
+                    <small>4353 Delaware Avenue, San Francisco, USA</small>
+                    <div class="message">
+                        <img src="./images/message.svg" alt=""><span>hi@thefolio.com</span>
+                    </div>
                 </div>
                 <div class="right">
-                    <button>View all projects</button>
+                    <div class="right-p">
+                        <p>About</p>
+                        <p>Contact</p>
+                        <p>Dribbble</p>
+                    </div>
+                    <div class="right-p">
+                        <p>Services</p>
+                        <p>Blog</p>
+                        <p>Instagram</p>
+                    </div>
+                    <div class="right-p">
+                        <p>Experience</p>
+                        <p>Projects</p>
+                        <p>Twitter</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="images">
-                <div class="desgin">
-                    <div class="foto">
-                        <img src="./images/IMAGE.svg " alt="">
-                    </div>
-                    <div class="foto-name">
-                        <h3>Branding</h3>
-                        <h2>Soulful Rebrand</h2>
-                        <p>View Project <i class="fa-solid fa-arrow-right"></i> </p>
-
-                    </div>
-                </div>
-                <div class="desgin">
-                    <div class="foto">
-                        <img src="./images/IMAGE (1).svg" alt="">
-                    </div>
-                    <div class="foto-name">
-                        <h3>Product Design</h3>
-                        <h2>Datadash Product design</h2>
-                        <p>View Project <i class="fa-solid fa-arrow-right"></i> </p>
-
-                    </div>
-                </div>
-                <div class="desgin">
-                    <div class="foto">
-                        <img src="./images/IMAGE (2).svg" alt="">
-                    </div>
-                    <div class="foto-name">
-                        <h3>Web Design</h3>
-                        <h2>Maize Website Design</h2>
-                        <p>View Project <i class="fa-solid fa-arrow-right"></i> </p>
-                    </div>
+            <div class="footer-down">
+                <div class="tags">
+                    <small>© All rights reserved.</small>
+                    <small>Sumit Hegde</small>
+                    <small>Powered by</small>
+                    <small>Webflow</small>
+                    <small>/ Image License Info</small>
+                    <small>/ Instructions</small>
+                    <small>/ Changelog</small>
+                    <small>/ Style Guide</small>
                 </div>
             </div>
         </div>
-        <div class="blog">
-            <div class="blog-header">
-                <div class="vector-right">
-                    <div class="top">
-                        <img src="./svgs/IMAGE (3).svg" alt="">
-                    </div>
-                    <div class="top">
-                        <img src="./svgs/Vector.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="black-page">
-                <div class="left-blog">
-                    <h3>Blogs</h3>
-                    <h1>Latest Blogs</h1>
-                    <span>View all <i class="fa-solid fa-arrow-right"></i></span>
-                </div>
-                <div class="article">
-                    <div class="read">
-                        <small>April 16, 2021, 6 mins</small>
-                        <p>Design tips for designers, that cover everything you need</p>
-                        <span>Read the article <i class="fa-solid fa-arrow-right"></i></span>
-                        <h5></h5>
-                    </div>
-                    <div class="read">
-                        <small>April 16, 2021, 5 mins</small>
-                        <p>How to build rapport with your web design clients</p>
-                        <span>Read the article <i class="fa-solid fa-arrow-right"></i></span>
-                        <h5></h5>
-                    </div>
-                    <div class="read">
-                        <small>April 16, 2021, 6 mins</small>
-                        <p>Top 6 free website mockup tools 2021</p>
-                        <span>Read the article <i class="fa-solid fa-arrow-right"></i></span>
-                        <h5></h5>
-                    </div>
-                    <div class="read">
-                        <small>April 16, 2021, 7 mins</small>
-                        <p>Logo design trends to avoid in 2021</p>
-                        <span>Read the article <i class="fa-solid fa-arrow-right"></i></span>
-                        <h5></h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="information">
-            <div class="i-header">
-                <div class="i-header-left">
-                    <h6>Product Designer</h6>
-                    <h2>That's me!</h2>
-                </div>
-                <div class="i-header-right">
-                    <p>Over the past 12 years, I've worked with a diverse range of clients, from startups to Fortune 500
-                        companies. I love crafting interfaces that delight users and help businesses grow.</p>
-                </div>
-            </div>
-            <div class="i-center">
-                <div class="center-img-left">
-                    <div class="i1">
-                        <img src="./images/IMAGE-phone.svg" alt="">
-                    </div>
-                    <div class="i2">
-                        <img src="./images/IMAGE -man.svg" alt="">
-                    </div>
-                </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-                <div class="center-img-right">
-                    <div class="i1">
-                        <img src="./images/IMAGE pc.svg" alt="">
-                    </div>
-                    <div class="i1">
-                        <img src="./images/IMAGE down.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="experience">
-                <div class="education">
-                    <div class="edupic">
-                        <img src="./images/📚 Education.svg" alt="">
-                    </div>
-                    <div class="info">
-                        <div class="universty">
-                            <h2>Stanford University</h2>
-                            <img src="./svgs/Vector-study.svg" alt="">
-                        </div>
-                        <div class="date">
-                            <p>MSc (Human Computer Interaction)</p>
-                            <small>• 2013-2015</small>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="universty">
-                            <h2>MIT Summer School</h2>
-                            <img src="./svgs/Vector-study.svg" alt="">
-                        </div>
-                        <div class="date">
-                            <p>California State University</p>
-                            <small>• 2009-2012</small>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="universty">
-                            <h2>California State University</h2>
-                            <img src="./svgs/Vector-study.svg" alt="">
-                        </div>
-                        <div class="date">
-                            <p>BSc in Software Engineering</p>
-                            <small>• 2009-2012</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <div class="workpic">
-                        <img src="./images/💼 Work Experience.svg" alt="">
-                    </div>
-                    <div class="infor">
-                        <div class="left-s">
-                            <div class="left-pic">
-                                <div class="space">
-                                    <img src="./svgs/space1.svg" alt="" >
-                                </div>
-                            </div>
-                            <div class="topic">
-                                <h2>SpaceFleet</h2>
-                                <small>Senior Product Designer</small>
-                            </div>
-                        </div>
-                        <div class="right-s">
-                            <div class="top-s">
-                                <img src="./images/Vectorwork.svg" alt="">
-                            </div>
-                            <small>• April 2019 - Current</small>
-                        </div>
-                    </div>
-
-                    <div class="infor">
-                        <div class="left-s">
-                            <div class="left-pic">
-                                <div class="music">
-                                    <img src="./svgs/music 1.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="topic">
-                                <h2>MusicMash</h2>
-                                <small>Information Architect</small>
-                            </div>
-                        </div>
-                        <div class="right-s">
-                            <div class="top-s">
-                                <img src="./images/Vectorwork.svg" alt="">
-                            </div>
-                            <small>• April 2016 - May 2017</small>
-                        </div>
-                    </div>
-
-                    <div class="infor">
-                        <div class="left-s">
-                            <div class="left-pic">
-                                <div class="king">
-                                    <img src="./svgs/king1.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="topic">
-                                <h2>Kingdom</h2>
-                                <small>UI Designer</small>
-                            </div>
-                        </div>
-                        <div class="right-s">
-                            <div class="top-s">
-                                <img src="./images/Vectorwork.svg" alt="">
-                            </div>
-                            <small>• April 2016 - May 2017</small>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="test">
-                <div class="test-header">
-                    <div class="side">
-                        <h6>Testimonials</h6>
-                        <h1>Word on the street</h1>
-                    </div>
-                </div>
-                <div class="center">
-                    <div class="man">
-                        <img src="./images/redman.svg" alt="">
-                    </div>
-                    <div class="speech">
-                        <div class="vector-c">
-                            <img src="./images/dirnaq.svg" alt="">
-                        </div>
-                        <h2>Jade helped us build a software so intuitive that it didn't need a walkthrough. He solved
-                            complex
-                            problems with brilliant design.</h2>
-                        <div class="bottom">
-                            <div class="name">
-                                <h4>John Frankin</h4>
-                                <p>Founder, Double Bunch</p>
-                            </div>
-                            <div class="bottom-figure">
-                                <div class="bottom-f">
-                                    <img src="./images/whitevec.svg" alt="">
-                                </div>
-                                <div class="bottom-f">
-                                    <img src="./images/wgitev.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="faq">
-                <div class="faq-header">
-                    <h5>FAQ</h5>
-                    <h1>Frequently asked questions</h1>
-                </div>
-                <div class="section">
-                    <div class="section-left">
-                        <div class="question">
-                            <p>What type of projects do you take on?</p>
-                            <div class="faq-vector">
-                                <img src="./images/Vectorfaq.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="question">
-                            <p>What is your hourly rate?</p>
-                            <div class="faq-vector">
-                                <img src="./images/Vectorfaq.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="question">
-                            <p>What time-zone do you work in?</p>
-                            <div class="faq-vector">
-                                <img src="./images/Vectorfaq.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="question">
-                            <p>What is the typical timeline for a project?</p>
-                            <div class="faq-vector">
-                                <img src="./images/Vectorfaq.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-right">
-                        <div class="question">
-                            <p>How do you charge for projects ?</p>
-                            <div class="faq-vector">
-                                <img src="./images/Vectorfaq.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="question">
-                            <p>What does your design process look like?</p>
-                            <div class="faq-vector">
-                                <img src="./images/Vectorfaq.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="question">
-                            <p>What metrics do you use to measure success?</p>
-                            <div class="faq-vector">
-                                <img src="./images/Vectorfaq.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="question">
-                            <p>What if I need help after the project is complete?</p>
-                            <div class="faq-vector">
-                                <img src="./images/Vectorfaq.svg" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="footer">
-                    <div class="footer-top">
-                        <h1>Ready to make something kickass?</h1>
-                        <h2>Let's get on a call.</h2>
-                    </div>
-                    <div class="footer-bottom">
-                        <div class="left">
-                            <p>Portfolio Creator.</p>
-                            <small>4353 Delaware Avenue, San Francisco, USA</small>
-                            <div class="message">
-                                <img src="./images/message.svg" alt=""><span>hi@thefolio.com</span>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="right-p">
-                                <p>About</p>
-                                <p>Contact</p>
-                                <p>Dribbble</p>
-                            </div>
-                            <div class="right-p">
-                                <p>Services</p>
-                                <p>Blog</p>
-                                <p>Instagram</p>
-                            </div>
-                            <div class="right-p">
-                                <p>Experience</p>
-                                <p>Projects</p>
-                                <p>Twitter</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-down">
-                        <div class="tags">
-                            <small>© All rights reserved.</small>
-                            <small>Sumit Hegde</small>
-                            <small>Powered by</small>
-                            <small>Webflow</small>
-                            <small>/ Image License Info</small>
-                            <small>/ Instructions</small>
-                            <small>/ Changelog</small>
-                            <small>/ Style Guide</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <script src="./index.js"></script>
 
 </body>
 
